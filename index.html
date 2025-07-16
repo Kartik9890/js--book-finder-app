@@ -10,11 +10,21 @@
       <h1>📚 Book Finder</h1>
       <input type="text" id="searchInput" placeholder="Search for books..." />
       <button onclick="searchBooks()">Search</button>
-      <button id="toggleTheme">🌙 Dark Mode</button>
+      <button id="toggleFavorites">⭐ Show Favorites</button>
+
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider"></span>
+        </label>
+        <span id="themeLabel">🌞 Light Mode</span>
+      </div>
 
       <div id="loader" style="display: none">
         <div class="spinner"></div>
       </div>
+      <p id="resultCount" style="margin-top: 20px"></p>
+
       <div id="results"></div>
     </div>
 
