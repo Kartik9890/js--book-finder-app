@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Finder App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 Book Finder</h1>
+      <input type="text" id="searchInput" placeholder="Search for books..." />
+      <button onclick="searchBooks()">Search</button>
+      <button id="toggleTheme">🌙 Dark Mode</button>
+
+      <div id="loader" style="display: none">
+        <div class="spinner"></div>
+      </div>
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
